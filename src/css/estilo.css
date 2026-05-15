@@ -366,7 +366,9 @@ button {
     display: flex;
     gap: 15px;
 }
-
+#cameraVideo {
+    transform: scaleX(-1);
+}
 .camera-acoes button {
     padding: 14px 30px;
     border: none;

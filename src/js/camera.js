@@ -12,11 +12,9 @@ async function iniciarCamera() {
 
     try {
 
-        const stream =
-            await navigator.mediaDevices.getUserMedia({
-                video: true
-            });
-
+        const stream = await navigator.mediaDevices.getUserMedia({
+    video: { facingMode: "environment" }
+});
         video.srcObject = stream;
 
     } catch (erro) {
